@@ -2,10 +2,8 @@
 	margin:0;
 	padding:0;
 }
-
-
 header{
-
+	z-index: 1;
 	width:100%;
 	background: #11D4CE;
 	height: 70px;
@@ -25,7 +23,7 @@ header{
 nav{
 	width: 70%;
 	height: 70px;
-	float:left;
+	float:right;
 	text-align: right;
 	padding-top: 24px;
 }
@@ -40,9 +38,9 @@ nav{
 nav ul li{
 	display: inline;
 }
-
 nav ul li a{
 	color: blue;
+	position: right;
 	font-size: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
