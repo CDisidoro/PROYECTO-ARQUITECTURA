@@ -1,0 +1,27 @@
+#particles-js{
+	background: url(src/banner.jpeg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover; 
+	width: 100%;
+}
+.titulo-principal{
+	top: 200px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+.contenido-principal{
+	width: 70%;
+	margin: auto;
+}
+.contenido-principal h1{
+	color: red;
+	font-family: Iceland;
+	font-size: 80px;
+}
+.contenido-principal p{
+	color: black;
+	font-family: Iceland;
+	font-size: 40px;
+}
