@@ -1,27 +1,41 @@
 #particles-js{
 	background: url(src/banner.jpeg);
 	background-position: center;
-	background-attachment: contain;
 	background-size: cover; 
 	width: 100%;
 }
 .titulo-principal{
-	top: 200px;
+	top: 90px;
 	width: 100%;
 	text-align: center;
-	position: top;
+	position: absolute;
 }
 .contenido-principal{
 	width: 70%;
 	margin: auto;
 }
 .contenido-principal h1{
-	color: red;
+	color: #0501FD;
 	font-family: Iceland;
 	font-size: 80px;
 }
-.contenido-principal p{
-	color: black;
+.texto-inferior{
+	top: 900px;
+	width: 100%;
 	font-family: Iceland;
+	text-align: center;
+	position: relative;
+}
+.texto-inferior p{
+	color: #0F46F9;
 	font-size: 40px;
+}
+.sec-2{
+	top: 900px;
+	font-family: Iceland;
+	position: relative;
+}
+.sec-2 h1{
+	font-size: 80px;
+	text-align: center;
 }
