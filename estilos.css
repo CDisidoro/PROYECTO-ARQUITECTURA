@@ -2,9 +2,6 @@
 	margin:0;
 	padding:0;
 }
-body{
-	background: #08BEB5;
-}
 header{
 	z-index: 1;
 	width:100%;
@@ -59,8 +56,4 @@ nav ul li a:hover{
 @font-face{
 	font-family: Iceland;
 	src:url(src/iceland.ttf);
-}
-hr{
-	height: 10px;
-	background: #0F46F9;
 }

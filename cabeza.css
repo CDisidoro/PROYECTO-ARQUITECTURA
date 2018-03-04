@@ -1,33 +1,28 @@
 #particles-js{
 	background: url(src/banner.jpeg);
 	background-position: center;
+	background-attachment: contain;
 	background-size: cover; 
 	width: 100%;
 }
 .titulo-principal{
-	top: 90px;
+	top: 200px;
 	width: 100%;
 	text-align: center;
-	position: absolute;
+	position: top;
 }
 .contenido-principal{
 	width: 70%;
 	margin: auto;
 }
 .contenido-principal h1{
-	color: #0501FD;
+	color: red;
 	font-family: Iceland;
 	font-size: 80px;
 }
-.texto-inferior{
-	top: 900px;
-	width: 100%;
+.contenido-principal p{
+	color: black;
 	font-family: Iceland;
-	text-align: center;
-	position: relative;
-}
-.texto-inferior p{
-	color: #0F46F9;
 	font-size: 40px;
 }
 .texto-inferior{
