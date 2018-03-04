@@ -30,6 +30,12 @@
 	color: #0F46F9;
 	font-size: 40px;
 }
+.texto-inferior{
+	top: 100px;
+	width: 100%;
+	text-align: center;
+	position: absolute;	
+}
 .sec-2{
 	top: 900px;
 	font-family: Iceland;
