@@ -43,12 +43,12 @@ nav ul li{
 
 nav ul li a{
 	color: blue;
-	font-size: 26px;
-	text-decoration: none;/*quita _*/
-	text-transform: uppercase;//transforma a mayus
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
 	font-weight: bold;
-	padding-left: 15px;
-	letter-spacing: 2px;
+	padding-left: 5px;
+	letter-spacing: 1px;
 	font-family: Iceland;
 }
 
