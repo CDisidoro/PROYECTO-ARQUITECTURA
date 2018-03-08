@@ -28,11 +28,11 @@
     </article>
   </section>
   <section class="texto-inferior">
-      <p class="animated slideInUp">UNA DESCRIPCION ALEATORIA PARA EL JUEGO: LOREM IPSUM DOLOR AT NOSEQUEMASVA AAAAAAA AGREA</p>
+      <p class="animated slideInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis luctus eros, ac lobortis dui blandit at. Aliquam non ornare risus, ac hendrerit metus.</p>
       <hr>
   </section>
   <section class="sec-2">
-    <h1 class="titulo-b">TEXTO</h1>
+    <h1 class="titulo-b">INTENTO DE GALERIA</h1>
   </section>
   <section id="particles-js"></section>
   <aside></aside>
@@ -77,21 +77,20 @@
 
       var control = 0;
       var mul = $(".Imagen").width();
-      var n = $("#Imagenes .Imagen").length;
+      var n = $(".Imagen").length;
+
+
       $(".next").on("click", function(){
-        if((Math.abs(control) == (n-1))){
-          return false;
-        }
         control--;
-        $(".Imagenes").css("margin-left",control * mul + "px" );
+        $("Imagenes").css("margin-left", (control * mul) + "px");
       });
-      $(".prev").on("click",function(){
-        if(Math.abs(control) == 0){
-          return false;
-        }
-        control++;
-        return false;
+
+      $(".prev").on("click", function(){
+
       });
+
+
+
     });
   </script>
 </body>
