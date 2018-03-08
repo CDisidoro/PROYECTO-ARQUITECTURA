@@ -165,10 +165,10 @@ figcaption{
 	display: none;
 	background: rgba(0,0,0,0.7);
 	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	width: 97%;
-	padding: 3%;
+	left: 14px;
+	bottom: 4px;
+	width: 90%;
+	padding: 5%;
 }
 figure:hover figcaption{
 	display: block;
