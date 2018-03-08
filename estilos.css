@@ -71,82 +71,35 @@ hr{
 	box-sizing: border-box;
 	font-family: "udec";
 }
-.content-all{
-	width: 100%;
+.container{
+	margin: 50px auto;
+	width: 400px;
 }
-.content-img{
-	width: 600px;
-	height: 400px;
-	margin: auto;
-	margin-top: 100px;
-	position: relative;
-	overflow: hidden;
+.galeria{
+	background-color: white;
 }
-.content-img img{
-	top: 90;
-	margin: auto;
-  	width: 100%;
-  	text-align: right;
-  	position: relative;
-  	text-overflow: 
-	height: 1000px;
-	padding-top: 24px;
+.Numeros{
+	text-align: center;
+	padding: 10px 0;
 }
-.content-1{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -758px;
-	transition: all 900ms;
+.Botones{
+	text-align: center;
 }
-.content-2{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -800px;
-	transition: all 500ms;
+.Botones a{
+	display: inline-block;
+	padding: 5px 10px;
+	color: #18E97C;
+	text-decoration: none;
+	font-family: Iceland;
+	font-size: 40px;
 }
-.content-3{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);	
-	transform: rotate(30deg);
-	margin-left: -800px;
-	margin-top: -500px;
-	transition: all 400ms;
-	box-shadow: 0px 1px 20px -5px black; 
+.Botones a:hover{
+	color: #FB0202;
 }
-.content-4{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -850px;
-	transition: all 650ms;
+.Imagenes{
+
 }
-.content-img:hover .content-1{
-	width: 222%;
-	transition: all 900ms;
-}
-.content-img:hover .content-2{
-	width: 222%;
-	transition: all 30ms;
-}
-.content-img:hover .content-3{
-	width: 222%;
-	transition: all 500ms;
-}
-.content-img:hover .content-4{
-	width: 222%;
-	transition: all 700ms;
+.Imagen{
+	width: 400px;
+	height: 1%;
 }
