@@ -32,7 +32,7 @@
       <hr>
   </section>
   <section class="sec-2">
-    <h1>TEXTO</h1>
+    <h1 class="titulo-b">TEXTO</h1>
   </section>
   <section id="particles-js"></section>
   <aside></aside>
@@ -44,31 +44,55 @@
   <br>
   <br>
   <br>
+  <br>
+  <br>
+  <br>
   <section class = "container">
     <article class="galeria">
-      <article class="Numeros">1 / 5</article>
+      <article class="Numeros">1 / 4</article>
       <article class="Botones">
         <a href="#" class="next"><-</a>
         <a href="#" class="prev">-></a>
       </article>
-      <article class="Imagenes">
-        <article class="Imagen">
+      <article class="Imagenes"><article class="Imagen">
           <img src="src/imagen1.jpg" alt="" width="400">
-        </article>
-        <article class="Imagen">
+        </article><article class="Imagen">
           <img src="src/imagen2.jpg" alt="" width="400">
-        </article>
-        <article class="Imagen">
+        </article><article class="Imagen">
           <img src="src/imagen3.jpg" alt="" width="400">
-        </article>
-        <article class="Imagen">
+        </article><article class="Imagen">
           <img src="src/imagen4.jpg" alt="" width="400">
-        </article>
-        <article class="Imagen">
-          <img src="src/imagen5.jpg" alt="" width="400">
         </article>
       </article>
     </article>
   </section>
+  <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+  <script>
+
+    $(function(){
+
+      var control = 0;
+      var mul = $(".Imagen").width();
+      var n = $("#Imagenes .Imagen").length;
+      $(".next").on("click", function(){
+        if((Math.abs(control) == (n-1))){
+          return false;
+        }
+        control--;
+        $(".Imagenes").css("margin-left",control * mul + "px" );
+      });
+      $(".prev").on("click",function(){
+        if(Math.abs(control) == 0){
+          return false;
+        }
+        control++;
+        return false;
+      });
+    });
+  </script>
 </body>
 </html>
