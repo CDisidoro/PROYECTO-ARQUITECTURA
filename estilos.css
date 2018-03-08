@@ -190,11 +190,17 @@ figure:hover figcaption{
 	text-align: center;
 	width: 500px; 
 	height: 500px;
+	font-family: Iceland;
+	font-size: 25px;
+	color: #0501FD;
 }
 .bio-camilo{
 	text-align: center;
 	width: 500px; 
 	height: 500px;
+	font-family: Iceland;
+	font-size: 25px;
+	color: #0501FD;
 }
 .video{
 	position: relative;
@@ -290,3 +296,7 @@ form ul li label{
 }
 .contact_form textarea {padding: 8px; width: 300px;}
 .contact_form button {margin-left: 156px;}
+section a img{
+	float: right;
+	width: 5%;
+}
