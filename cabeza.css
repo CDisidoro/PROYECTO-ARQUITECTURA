@@ -27,7 +27,7 @@
   position: relative;
 }
 .texto-inferior p{
-  color: #0F46F9;
+  color: #0F46F9; 
   font-size: 40px;
 }
 .sec-2{
@@ -38,4 +38,5 @@
 .sec-2 h1{
   font-size: 80px;
   text-align: center;
+  position: relative;
 }
