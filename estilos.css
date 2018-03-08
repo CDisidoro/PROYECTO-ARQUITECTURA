@@ -269,3 +269,24 @@ form ul li label{
 .texto{
 	float: right;
 }
+.submit{
+	font-family: Iceland;
+	color: #041DFA;
+	font-size: 30px;
+}
+.contact_form ul{
+	list-style-type: none;
+}
+.contact_form label{
+	width: 150px;
+	margin-top: 3px;
+	display: inline-block;
+	padding: 3px;
+}
+.contact_form input{
+	height: 40px;
+	width: 220px;
+	padding: 5px 8px;
+}
+.contact_form textarea {padding: 8px; width: 300px;}
+.contact_form button {margin-left: 156px;}
