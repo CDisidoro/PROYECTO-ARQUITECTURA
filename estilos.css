@@ -255,10 +255,17 @@ section a{
 	font-family: Iceland;
 	font-size: 40px; 
 }
-.asunto{
-	float: right;
-	
+form ul li h2{
+	font-family: Iceland;
+	text-align: center;
+	color: #041DFA;
+	font-size: 50px;
 }
-.asunto h1{
-	color: red;
+form ul li label{
+	font-family: Iceland;
+	color: #041DFA;
+	font-size: 30px;
+}
+.texto{
+	float: right;
 }
