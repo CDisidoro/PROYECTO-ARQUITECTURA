@@ -201,3 +201,45 @@ figure:hover figcaption{
 	bottom: 380px;
 	width: 100%; 
 }
+.titulo-b{
+	text-align: center;
+	font-family: Iceland;
+	color: #0501FD;
+	font-size: 60px;
+
+}
+.container{
+  margin: 50px auto;
+  width: 400px;
+}
+.galeria{
+  background-color: #11D4CE;
+  overflow: hidden;
+}
+.Numeros{
+  text-align: center;
+  padding: 5px 10px;
+}
+.Botones{
+  text-align: center;
+}
+.Botones a{
+  display: inline-block;
+  padding: 0px 10px;
+  color: #041DFA;
+  text-decoration: none;
+  font-family: Iceland;
+  font-size: 40px;
+}
+.Botones a:hover{
+  color: #018CF8;
+}
+.Imagenes{
+  width: 2000px;
+}
+.Imagen{
+  width: 400px;
+  height: 1%;
+  display: inline-block;
+  vertical-align: top;
+}

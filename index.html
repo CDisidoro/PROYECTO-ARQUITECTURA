@@ -28,107 +28,90 @@
     </article>
   </section>
   <section class="texto-inferior">
-      <p class="animated slideInUp">UNA DESCRIPCION ALEATORIA PARA EL JUEGO: LOREM IPSUM DOLOR AT NOSEQUEMASVA AAAAAAA AGREA</p>
+      <p class="animated slideInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis luctus eros, ac lobortis dui blandit at. Aliquam non ornare risus, ac hendrerit metus.</p>
       <hr>
   </section>
   <section class="sec-2">
-    <h1>TEXTO</h1>
+    <h1 class="titulo-b">INTENTO DE GALERIA</h1>
   </section>
   <section id="particles-js"></section>
   <aside></aside>
   <footer></footer>
   <script src="particles.js"></script>
   <script src="app.js"></script>
-  
-  
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/imagen1.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class = "container">
+    <article class="galeria">
+      <article class="Numeros">1 / 4</article>
+      <article class="Botones">
+        <a href="#" class="next"><-</a>
+        <a href="#" class="prev">-></a>
+      </article>
+      <article class="Imagenes"><article class="Imagen">
+          <img src="src/imagen1.jpg" alt="" width="400">
+        </article><article class="Imagen">
+          <img src="src/imagen2.jpg" alt="" width="400">
+        </article><article class="Imagen">
+          <img src="src/imagen3.jpg" alt="" width="400">
+        </article><article class="Imagen">
+          <img src="src/imagen4.jpg" alt="" width="400">
+        </article>
+      </article>
+    </article>
   </section>
+  <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/imagen2.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
-  </section>
+  <script>
 
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/imagen3.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
-  </section>
+    $(function(){
 
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/imagen4.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
-  </section>
+      var control = 0;
+      var mul = $(".Imagen").width();
+      var n = $(".Imagen").length;
 
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/imagen5.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
-  </section>
 
-  <section class = "content-all">
-  	<article class = "content-img">
-  		<img src="src/DEMACIA.jpg">
-  				
-  			<h1 class = "content-1"></h1>
-  			<h1 class = "content-2"></h1>
-  			<h1 class = "content-3"></h1>
- 			<h1 class = "content-4"></h1>
-  		
-  	</article>
-  </section>
+      $(".next").on("click", function(){
+        control--;
+        $("Imagenes").css("margin-left", (control * mul) + "px");
+      });
+
+      $(".prev").on("click", function(){
+
+      });
+
+
+
+    });
+  </script>
+  <hr>
   <section>
-  <h1>biografia de los autores del juego </h1>
-  	<figure>
-  		<img class= "img1" src="src/dairo.jpg" all= "dairoooooo" >  	
-  			<figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
-  			<p class="bio-dairo">Nacio en Villeta el 10 de julio de 1999, curso sus estudios primarios en la esculea rural nacederos, sus estudios de bachiller los realizo en el colegio departamnel la magdalena, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
-  	</figure>
-  	<figure>
-  		<img class= "img2" src="src/camilo.jpg" all="camilooooooo" >  	
-  			<figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
-  			<p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
-  	</figure>
+  <h1 class="titulo-b">¿QUIENES SOMOS?</h1>
+    <figure>
+      <img class= "img1" src="src/dairo.jpg" all= "dairoooooo" >    
+        <figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
+        <p class="bio-dairo">Nacio en Villeta el 10 de julio de 1999, curso sus estudios primarios en la esculea rural nacederos, sus estudios de bachiller los realizo en el colegio departamnel la magdalena, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
+    </figure>
+    <figure>
+      <img class= "img2" src="src/camilo.jpg" all="camilooooooo" >    
+        <figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
+        <p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
+    </figure>
   </section>
 
   <section class="video">
-  	<center>
-  		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWodAv1KHaM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  	</center>
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWodAv1KHaM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </center>
   </section>
 </body>
+</html>
