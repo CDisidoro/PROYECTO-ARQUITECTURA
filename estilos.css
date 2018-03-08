@@ -87,6 +87,7 @@ hr{
 	padding-top: 0px;
 }
 .content-img img{
+	display: inline-block;
 	top: 90;
 	margin: 0;
   	width: 100%;
@@ -161,17 +162,18 @@ figure{
 	position: relative;
 }
 figcaption{
-	color: red;
+	text-align: center;
+	color: #0AEFEB;
 	display: none;
 	background: rgba(0,0,0,0.7);
 	position: absolute;
-	left: 14px;
 	bottom: 4px;
-	width: 90%;
+	width: 100%;
 	padding: 5%;
 }
 figure:hover figcaption{
 	display: block;
+	position: relative;
 }
 .img1{
 	position: relative;
@@ -182,4 +184,20 @@ figure:hover figcaption{
 	position: relative;
 	width: 500px; 
 	height: 500px;
+
+} 
+.bio-dairo{
+	text-align: center;
+	width: 500px; 
+	height: 500px;
+}
+.bio-camilo{
+	text-align: center;
+	width: 500px; 
+	height: 500px;
+}
+.video{
+	position: relative;
+	bottom: 380px;
+	width: 100%; 
 }
