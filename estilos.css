@@ -243,3 +243,22 @@ figure:hover figcaption{
   display: inline-block;
   vertical-align: top;
 }
+section h1{
+	text-decoration: none;
+	color: #041DFA;
+	font-family: Iceland;
+	font-size: 30px; 
+}
+section a{
+	text-decoration: none;
+	color: #041DFA;
+	font-family: Iceland;
+	font-size: 40px; 
+}
+.asunto{
+	float: right;
+	
+}
+.asunto h1{
+	color: red;
+}
