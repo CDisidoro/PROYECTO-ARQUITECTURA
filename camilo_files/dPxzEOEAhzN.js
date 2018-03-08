@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["C8Eby"]); }
+
+__d("XProfileTilesLogDismissController",["XController"],(function a(b,c,d,e,f,g){f.exports=c("XController").create("/profile/tiles/log/dismiss/",{section_type:{type:"Enum",required:true,enumType:1}})}),null);
+__d("ProfileTileActions",["csx","cx","CSS","Event","AsyncRequest","XProfileTilesLogDismissController","tidyEvent"],(function a(b,c,d,e,f,g,h,i){var j={addCollapseListeners:function k(l,m){var n=l.querySelector("._3vay");if(n!==null)c("tidyEvent")(c("Event").listen(n,"click",function(event){c("CSS").addClass(l,"_65tv");var o=c("XProfileTilesLogDismissController").getURIBuilder().setEnum("section_type",m);new(c("AsyncRequest"))().setURI(o.getURI()).setMethod("POST").send()}))}};f.exports=j}),null);

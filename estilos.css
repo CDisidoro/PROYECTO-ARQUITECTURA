@@ -67,30 +67,34 @@ hr{
 *{
 	margin: 0;
 	padding: 0;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: "udec";
 }
 .content-all{
+	margin:0;
+	display: inline-block;
+	position: relative;
 	width: 100%;
 }
 .content-img{
+	position: relative;
 	width: 600px;
 	height: 400px;
-	margin: auto;
+	margin: 0;
+	display: inline-block;
 	margin-top: 100px;
-	position: relative;
 	overflow: hidden;
+	padding-top: 0px;
 }
 .content-img img{
 	top: 90;
-	margin: auto;
+	margin: 0;
   	width: 100%;
   	text-align: right;
   	position: relative;
   	text-overflow: 
 	height: 1000px;
-	padding-top: 24px;
+	padding-top: 0px;
 }
 .content-1{
 	width: 1000px;
@@ -149,4 +153,33 @@ hr{
 .content-img:hover .content-4{
 	width: 222%;
 	transition: all 700ms;
+}
+
+figure{
+	margin: 0;
+	display: inline-block;
+	position: relative;
+}
+figcaption{
+	color: red;
+	display: none;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 97%;
+	padding: 3%;
+}
+figure:hover figcaption{
+	display: block;
+}
+.img1{
+	position: relative;
+	width: 500px; 
+	height: 500px;
+}	
+.img2{
+	position: relative;
+	width: 500px; 
+	height: 500px;
 }
