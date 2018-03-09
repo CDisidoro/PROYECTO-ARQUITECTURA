@@ -70,92 +70,6 @@ hr{
 	box-sizing: border-box;
 	font-family: "udec";
 }
-.content-all{
-	margin:0;
-	display: inline-block;
-	position: relative;
-	width: 100%;
-}
-.content-img{
-	position: relative;
-	width: 600px;
-	height: 400px;
-	margin: 0;
-	display: inline-block;
-	margin-top: 100px;
-	overflow: hidden;
-	padding-top: 0px;
-}
-.content-img img{
-	display: inline-block;
-	top: 90;
-	margin: 0;
-  	width: 100%;
-  	text-align: right;
-  	position: relative;
-  	text-overflow: 
-	height: 1000px;
-	padding-top: 0px;
-}
-.content-1{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -758px;
-	transition: all 900ms;
-}
-.content-2{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -800px;
-	transition: all 500ms;
-}
-.content-3{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);	
-	transform: rotate(30deg);
-	margin-left: -800px;
-	margin-top: -500px;
-	transition: all 400ms;
-	box-shadow: 0px 1px 20px -5px black; 
-}
-.content-4{
-	width: 1000px;
-	height: 1000px;
-	position: absolute;
-	top: 0;
-	background: rgba(0,100,1000,0.5);
-	transform: rotate(-30deg);
-	margin-left: -850px;
-	transition: all 650ms;
-}
-.content-img:hover .content-1{
-	width: 222%;
-	transition: all 900ms;
-}
-.content-img:hover .content-2{
-	width: 222%;
-	transition: all 30ms;
-}
-.content-img:hover .content-3{
-	width: 222%;
-	transition: all 500ms;
-}
-.content-img:hover .content-4{
-	width: 222%;
-	transition: all 700ms;
-}
-
 figure{
 	margin: 0;
 	display: inline-block;
@@ -174,19 +88,19 @@ figcaption{
 figure:hover figcaption{
 	display: block;
 	position: relative;
+	padding: 5%
 }
 .img1{
-	position: relative;
 	width: 500px; 
 	height: 500px;
 }	
 .img2{
-	position: relative;
+	padding-top: 30px;
 	width: 500px; 
 	height: 500px;
-
 } 
 .bio-dairo{
+	padding-bottom: 25px;
 	text-align: center;
 	width: 500px; 
 	height: 500px;
@@ -195,6 +109,7 @@ figure:hover figcaption{
 	color: #0501FD;
 }
 .bio-camilo{
+	padding-bottom: 25px;
 	text-align: center;
 	width: 500px; 
 	height: 500px;
