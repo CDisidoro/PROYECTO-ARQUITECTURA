@@ -1,168 +1,141 @@
-<!DOCTYPE html>
-<html lang ="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="estilos.css">
-  <link rel="stylesheet" type="text/css" href="cabeza.css">
-  <link rel="stylesheet" href="animate.css">
-  <title>game</title>
-</head>
-<body>
-  <header>
-    <section class="conf">
-    <nav>
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">¿Quienes Somos?</a></li>
+
+
+  </center>
+      <img class= "img-juego" src="src/juego.png">
+        <br>
+        <button class="btn" id="btn1">&#10094;</button>
+        <button class="btn" id="btn2">&#10095;</button>
+        <button class="submit" type="submit">Enviar</button>
+        <figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
+        <figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
+        <h2>Contactanos</h2>
+        <img class="slides" src="src/imagen1.jpg">
+        <img class="slides" src="src/imagen2.jpg">
+        <img class="slides" src="src/imagen3.jpg">
+        <img class="slides" src="src/imagen4.jpg">
+        <input type="text" name="apellido" placeholder="Disidoro Flechas" />
+        <input type="text" name="email" placeholder="camilodisidoro2015@gmail.com" />
+        <input type="text" name="message" placeholder="Bug Encontrado" />
+        <input type="text" name="name" placeholder="Camilo Andres" />
+        <label for="email">e-mail</label>
+        <label for="message">Asunto</label>
+        <label for="message">Ingrese su Inquietud</label>
+        <label for="name">Apellidos</label>
+        <label for="name">Nombres</label>
         <li><a href="">Contactanos</a></li>
         <li><a href="">Ingreso</a></li>
-      </ul>
-    </nav>
-    </section>
-  </header>
-  <section class="titulo-principal">  
-    <article class="contenido-principal">
-      <h1 class="animated slideInUp">OPERATIONS DC</h1>
-    </article>
-  </section>
-  <section class="texto-inferior">
-      <p class="animated slideInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis luctus eros, ac lobortis dui blandit at. Aliquam non ornare risus, ac hendrerit metus.</p>
-      <hr>
-  </section>
-  <section class="sec-2">
-    <h1 class="titulo-b">INTENTO DE GALERIA</h1>
-  </section>
-  <section id="particles-js"></section>
-  <aside></aside>
-  <footer></footer>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <section class = "container">
-    <article class="galeria">
-      <article class="Numeros">1 / 4</article>
-      <article class="Botones">
-        <a href="#" class="next"><-</a>
-        <a href="#" class="prev">-></a>
-      </article>
-      <article class="Imagenes"><article class="Imagen">
-          <img src="src/imagen1.jpg" alt="" width="400">
-        </article><article class="Imagen">
-          <img src="src/imagen2.jpg" alt="" width="400">
-        </article><article class="Imagen">
-          <img src="src/imagen3.jpg" alt="" width="400">
-        </article><article class="Imagen">
-          <img src="src/imagen4.jpg" alt="" width="400">
-        </article>
-      </article>
-    </article>
-  </section>
-  <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-
-  <script>
-
-    $(function(){
-
-      var control = 0;
-      var mul = $(".Imagen").width();
-      var n = $(".Imagen").length;
-
-
-      $(".next").on("click", function(){
-        control--;
-        $("Imagenes").css("margin-left", (control * mul) + "px");
-      });
-
-      $(".prev").on("click", function(){
-
-      });
-
-
-
-    });
-  </script>
-  <hr>
-  <section>
-  <h1 class="titulo-b">¿QUIENES SOMOS?</h1>
-    <figure>
-      <img class= "img1" src="src/dairo.jpg" all= "dairoooooo" >    
-        <figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
-        <p class="bio-dairo">Nacio en Villeta el 10 de julio de 1999, curso sus estudios primarios en la esculea rural nacederos, sus estudios de bachiller los realizo en el colegio departamnel la magdalena, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
-    </figure>
-    <figure>
-      <img class= "img2" src="src/camilo.jpg" all="camilooooooo" >    
-        <figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">¿Quienes Somos?</a></li>
         <p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
-    </figure>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <section class="video">
-    <center>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWodAv1KHaM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </center>
-  </section>
-  <hr>
-  <form class="contact_form" action="" method="post" name="Contacto">
-    <ul>
-      <li>
-        <h2>Contactanos</h2>
-      </li>
-      <li class="texto">
-        <label for="message">Ingrese su Inquietud</label>
+        <p class="bio-dairo">Nacio en Villeta el 10 de julio de 1999, curso sus estudios primarios en la esculea rural nacederos, sus estudios de bachiller los realizo en el colegio departamnel la magdalena, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
         <textarea name="message" cols="40" rows="6"></textarea>
       </li>
-      <li>
-        <label for="email">e-mail</label>
-        <input type="text" name="email" placeholder="camilodisidoro2015@gmail.com" />
       </li>
-      <li>
-        <label for="name">Nombres</label>
-        <input type="text" name="name" placeholder="Camilo Andres" />
       </li>
-      <li>
-        <label for="name">Apellidos</label>
-        <input type="text" name="apellido" placeholder="Disidoro Flechas" />
       </li>
-      <li>
-        <label for="message">Asunto</label>
-        <input type="text" name="message" placeholder="Bug Encontrado" />
       </li>
-      <li>
-      	<br>
-        <button class="submit" type="submit">Enviar</button>
       </li>
+      </li>
+      </ul>
+      <a href="registro_usuario.html">Registrarse</a>
+      <br>
+      <h1 class="animated slideInUp">OPERATIONS DC</h1>
+      <hr>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWodAv1KHaM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <img class= "img2" src="src/camilo.jpg">    
+      <img class="img1" src="src/dairo.jpg">    
+      <li class="texto">
+      <li>
+      <li>
+      <li>
+      <li>
+      <li>
+      <li>
+      <p class="animated slideInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis luctus eros, ac lobortis dui blandit at. Aliquam non ornare risus, ac hendrerit metus.</p>
+      <ul>
+    </article>
+    </center>
+    </div>
+    </figure>
+    </figure>
+    </nav>
+    </section>
+    </section>
     </ul>
-  </form>
-  <hr>
-  <section>
-    <a href="https://www.youtube.com/"><img src="src/yt.png"></a>
-    <a href="https://www.twitter.com/"><img src="src/twitter.png"></a>
     <a href="https://www.facebook.com/"><img src="src/facebook.png"></a>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <section>
+    <a href="https://www.twitter.com/"><img src="src/twitter.png"></a>
+    <a href="https://www.youtube.com/"><img src="src/yt.png"></a>
+    <article class="contenido-principal">
     <center>
-    	<img class= "img-juego" src="src/juego.png">
-	</center>
+    <center>
+    <div id="container">
+    <figure>
+    <figure>
+    <h1 class="titulo-b">INTENTO DE GALERIA</h1>
+    <nav>
+    <section class="conf">
+    <section class="item2">
+    <ul>
+    alert(x.length);
+    var x = document.getElementsByClassName('slides');
+  </form>
+  </header>
   </section>
+  </section>
+  </section>
+  </section>
+  </section>
+  </section>
+  </section>
+  <aside></aside>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer></footer>
+  <form class="contact_form" action="" method="post" name="Contacto">
+  <h1 class="titulo-b">¿QUIENES SOMOS?</h1>
+  <header>
+  <hr>
+  <hr>
+  <hr>
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="cabeza.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <meta charset="UTF-8">
+  <script src="app.js"></script>
+  <script src="particles.js"></script>
+  <section class="item1">
+  <section class="sec-2">
+  <section class="texto-inferior">
+  <section class="titulo-principal">  
+  <section class="video">
+  <section id="particles-js"></section>
+  <section>
+  <section>
+  <title>Proyecto Arquitectura D'isidoro Beltran</title>
+  function showImage(){
+  var index = 0;
+  }
+<!DOCTYPE html>
 </body>
+</head>
 </html>
+</script>
+<body>
+<head>
+<html lang ="en">
+<script>

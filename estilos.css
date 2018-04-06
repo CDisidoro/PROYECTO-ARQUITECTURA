@@ -3,12 +3,12 @@
   padding:0;
 }
 body{
-  background: #08BEB5;
+  background: #1C1B1B;
 }
 header{
   z-index: 1;
   width:100%;
-  background: #11D4CE;
+  background: #424242;
   height: 70px;
   position: fixed;
 }
@@ -42,7 +42,7 @@ nav ul li{
   display: inline;
 }
 nav ul li a{
-  color: blue;
+  color: #000000;
   position: right;
   font-size: 18px;
   text-decoration: none;
@@ -54,7 +54,7 @@ nav ul li a{
 }
  
 nav ul li a:hover{
-  color:red;
+  color:#1C1C1C;
 }
 @font-face{
   font-family: Iceland;
@@ -62,13 +62,13 @@ nav ul li a:hover{
 }
 hr{
   height: 10px;
-  background: #0F46F9;
+  background: #6E6E6E;
 }
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "udec";
+	font-family: "ICeland";
 }
 figure{
 	margin: 0;
@@ -77,7 +77,7 @@ figure{
 }
 figcaption{
 	text-align: center;
-	color: #0AEFEB;
+	color: #000000;
 	display: none;
 	background: rgba(0,0,0,0.7);
 	position: absolute;
@@ -93,29 +93,32 @@ figure:hover figcaption{
 .img1{
 	width: 500px; 
 	height: 500px;
+	float: left;
 }	
 .img2{
-	padding-top: 30px;
 	width: 500px; 
 	height: 500px;
+	float: right;
 } 
 .bio-dairo{
 	padding-bottom: 25px;
-	text-align: center;
-	width: 500px; 
-	height: 500px;
+	text-align: left;
 	font-family: Iceland;
 	font-size: 25px;
-	color: #0501FD;
+	color: #000000;
 }
 .bio-camilo{
 	padding-bottom: 25px;
-	text-align: center;
-	width: 500px; 
-	height: 500px;
+	text-align: right;
 	font-family: Iceland;
 	font-size: 25px;
-	color: #0501FD;
+	color: #000000;
+}
+.item1{
+	float: left;
+}
+.item2{
+	float: right;
 }
 .video{
 	position: relative;
@@ -125,7 +128,7 @@ figure:hover figcaption{
 .titulo-b{
 	text-align: center;
 	font-family: Iceland;
-	color: #0501FD;
+	color: #6E6E6E;
 	font-size: 60px;
 
 }
@@ -134,11 +137,12 @@ figure:hover figcaption{
   width: 400px;
 }
 .galeria{
-  background-color: #11D4CE;
+  background-color: #424242;
   overflow: hidden;
 }
 .Numeros{
   text-align: center;
+  font-size: 40px;
   padding: 5px 10px;
 }
 .Botones{
@@ -147,7 +151,7 @@ figure:hover figcaption{
 .Botones a{
   display: inline-block;
   padding: 0px 10px;
-  color: #041DFA;
+  color: #000000;
   text-decoration: none;
   font-family: Iceland;
   font-size: 40px;
@@ -166,25 +170,25 @@ figure:hover figcaption{
 }
 section h1{
 	text-decoration: none;
-	color: #041DFA;
+	color: #000000;
 	font-family: Iceland;
 	font-size: 30px; 
 }
 section a{
 	text-decoration: none;
-	color: #041DFA;
+	color: #000000;
 	font-family: Iceland;
 	font-size: 40px; 
 }
 form ul li h2{
 	font-family: Iceland;
 	text-align: center;
-	color: #041DFA;
+	color: #6E6E6E;
 	font-size: 50px;
 }
 form ul li label{
 	font-family: Iceland;
-	color: #041DFA;
+	color: #000000;
 	font-size: 30px;
 }
 .texto{
@@ -192,7 +196,7 @@ form ul li label{
 }
 .submit{
 	font-family: Iceland;
-	color: #041DFA;
+	color: #000000;
 	font-size: 30px;
 }
 .contact_form ul{
@@ -214,4 +218,34 @@ form ul li label{
 section a img{
 	float: right;
 	width: 5%;
+}
+#container{
+	width: 80%;
+	height: 450px;
+	border: 1px solid black;
+	margin: 0 auto;
+	position: relative;
+}
+#container img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.btn{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	top: 200px;
+	background: black;
+	color: white;
+	font-size: 20PX;
+}
+#container #btn1:hover{
+	box-shadow: 10px 0px 20px 10px black;
+}
+#btn2{
+	position: relative;
+	float: right;
 }
