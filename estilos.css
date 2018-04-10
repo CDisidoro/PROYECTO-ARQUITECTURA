@@ -71,51 +71,51 @@ hr{
 	font-family: "udec";
 }
 figure{
-	margin: 0;
-	display: inline-block;
-	position: relative;
+  margin: 0;
+  display: inline-block;
+  position: relative;
 }
 figcaption{
-	text-align: center;
-	color: #0AEFEB;
-	display: none;
-	background: rgba(0,0,0,0.7);
-	position: absolute;
-	bottom: 4px;
-	width: 100%;
-	padding: 5%;
+  text-align: center;
+  color: #0AEFEB;
+  display: none;
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  padding: 5%;
 }
 figure:hover figcaption{
-	display: block;
-	position: relative;
-	padding: 5%
+  display: block;
+  position: relative;
+  padding: 5%
 }
 .img1{
-	width: 500px; 
-	height: 500px;
-}	
+  width: 500px; 
+  height: 500px;
+}  
 .img2{
-	padding-top: 30px;
-	width: 500px; 
-	height: 500px;
+  padding-top: 30px;
+  width: 500px; 
+  height: 500px;
 } 
 .bio-dairo{
-	padding-bottom: 25px;
-	text-align: center;
-	width: 500px; 
-	height: 500px;
-	font-family: Iceland;
-	font-size: 25px;
-	color: #0501FD;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 500px; 
+  height: 500px;
+  font-family: Iceland;
+  font-size: 25px;
+  color: #0501FD;
 }
 .bio-camilo{
-	padding-bottom: 25px;
-	text-align: center;
-	width: 500px; 
-	height: 500px;
-	font-family: Iceland;
-	font-size: 25px;
-	color: #0501FD;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 500px; 
+  height: 500px;
+  font-family: Iceland;
+  font-size: 25px;
+  color: #0501FD;
 }
 .video{
 	position: relative;
