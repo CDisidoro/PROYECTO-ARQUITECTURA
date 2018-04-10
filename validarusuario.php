@@ -20,8 +20,7 @@ $sql = "SELECT * FROM usuario WHERE nickname = '$nickname'";
  
 $resultado = $conexion->query($sql); 
 //$stmt = $colombia->prepare($sql); 
-//$stmt->execute(); if($resultado->num_rows > 0){ 
-} 
+//$stmt->execute(); if($resultado->num_rows > 0){  
  
  
   $row = $resultado->fetch_array(); 
@@ -31,14 +30,70 @@ $resultado = $conexion->query($sql);
     $_SESSION['ingreso'] = true; 
     $_SESSION['nickname'] = $nickname; 
    
-    echo " 
+echo "<!DOCTYPE html> 
+<html lang='en'> 
+  <head> 
+  <meta charset='UTF-8'> 
   <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
   <link rel='stylesheet' type='text/css' href='estilos.css'> 
-  <link rel='stylesheet' type='text/css' href='cabeza.css'>Bienvenido !!!!  " .$nickname; 
-    echo "<br> <a href= game.php?id=".$nickname.">puede ingresar al juego</a>"; 
- 
+  <link rel='stylesheet' type='text/css' href='cabeza.css'>
+  <link rel='icon' type='image/png' href='src/login.png'>
+  <title>Iniciar Sesión</title>
+</head> 
+<body>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h1 style='font-size: 60px;'>BIENVENIDO :".strtoupper($nickname)."</h1>
+  <a href='game.php?id=".$nickname."' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Ingresar al Juego</a>
+  </center>
+ </body> 
+</html>"; 
   }else{ 
-    echo "credenciales incorrectas"; 
-    echo "<br> <a href= login.html>volver a ingresar</a>"; 
+    echo "<!DOCTYPE html> 
+<html lang='en'> 
+  <head> 
+  <meta charset='UTF-8'> 
+  <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
+  <link rel='stylesheet' type='text/css' href='estilos.css'> 
+  <link rel='stylesheet' type='text/css' href='cabeza.css'>
+  <link rel='icon' type='image/png' href='src/login.png'>
+  <title>Iniciar Sesión</title>
+</head> 
+<body>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h1 style='font-size: 60px;'>DATOS ERRÓNEOS</h1>
+  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
+  </center>
+ </body> 
+</html>"; 
   } 
   ?>
