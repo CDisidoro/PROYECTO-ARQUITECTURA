@@ -79,6 +79,7 @@ else{
   <br>
   <br>
   <h1>ERROR AL REGISTRAR</h1>
+  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
   <br>
   <br>
   <br>

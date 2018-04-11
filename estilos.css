@@ -3,12 +3,12 @@
   padding:0;
 }
 body{
-  background: #08BEB5;
+  background: #151515;
 }
 header{
   z-index: 1;
   width:100%;
-  background: #11D4CE;
+  background: #424242;
   height: 70px;
   position: fixed;
 }
@@ -42,7 +42,7 @@ nav ul li{
   display: inline;
 }
 nav ul li a{
-  color: blue;
+  color: black;
   position: right;
   font-size: 18px;
   text-decoration: none;
@@ -54,7 +54,7 @@ nav ul li a{
 }
  
 nav ul li a:hover{
-  color:red;
+  color:#212121;
 }
 @font-face{
   font-family: Iceland;
