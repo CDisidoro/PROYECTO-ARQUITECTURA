@@ -71,13 +71,13 @@ hr{
 	font-family: "udec";
 }
 figure{
-  margin: 0;
+  margin: 5.1%;
   display: inline-block;
   position: relative;
 }
 figcaption{
   text-align: center;
-  color: #0AEFEB;
+  color: #fff;
   display: none;
   background: rgba(0,0,0,0.7);
   position: absolute;
