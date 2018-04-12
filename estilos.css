@@ -213,3 +213,9 @@ section a img{
   75%{margin-left: -300%;}
   100%{margin-left: -300%;}
 }
+.video{
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 550px;
+  height: 450px;
+}
