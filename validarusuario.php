@@ -1,5 +1,5 @@
 <?php  
-session_start(); //abrir una sesion  
+session_start();  
 ?>
 <?php
 require_once('conexion.php'); 
@@ -11,9 +11,9 @@ $sql = "SELECT * FROM usuario WHERE nickname = '$nickname'";
 $stmt = $colombia->prepare($sql); 
 $stmt->execute();
 $rows= $stmt->fetchAll();
-$n = count($rows);
+print_r($rows);
 if(count($rows) > 0){
-  $row = $stmt->fetchAll(); 
+  $row = $stmt->fetchAll();
   if($password==$row['password']){ 
     $_SESSION['ingreso'] = true; 
     $_SESSION['nickname'] = $nickname; 
@@ -28,22 +28,7 @@ if(count($rows) > 0){
       <title>Iniciar Sesión</title>
     </head> 
     <body>  
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <center><h1 style='font-size: 60px; font-family: Iceland;'>BIENVENIDO :".strtoupper($nickname)."</h1>
       <a href='game.php?id=".$nickname."' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Ingresar al Juego</a>
       </center>
@@ -62,22 +47,7 @@ if(count($rows) > 0){
       <title>Iniciar Sesión</title>
     </head> 
     <body>  
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <center><h1 style='font-size: 60px; font-family: Iceland;'>DATOS ERRÓNEOS</h1>
       <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
       </center>
@@ -97,22 +67,7 @@ if(count($rows) > 0){
       <title>Iniciar Sesión</title>
     </head> 
     <body>  
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <center><h1 style='font-size: 60px; font-family: Iceland;'>DATOS ERRÓNEOS</h1>
       <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
       </center>
