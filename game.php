@@ -1,9 +1,5 @@
 <?php  
-session_start(); //abrir una sesion  
-echo " 
-  <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
-    <link rel='stylesheet' type='text/css' href='estilos.css'> 
-    <link rel='stylesheet' type='text/css' href='cabeza.css'>"; 
+session_start(); //abrir una sesion 
 if(isset($_SESSION['ingreso']) && $_SESSION['ingreso'] ==true){ 
  
 } 
