@@ -32,8 +32,8 @@ else{
   <br>
   <br>
   <br>
-  <center><h1 style='font-size: 60px;'>ACCESO ILEGAL AL JUEGO</h1>
-  <center><h1 style='font-size: 60px;'>POR FAVOR, INICIE SESIÓN DE FORMA ADECUADA</h1>
+  <center><h1 style='font-size: 60px; font-family: Iceland;'>ACCESO ILEGAL AL JUEGO</h1>
+  <center><h1 style='font-size: 60px; font-family: Iceland;'>POR FAVOR, INICIE SESIÓN DE FORMA ADECUADA</h1>
   <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
   </center>
  </body> 

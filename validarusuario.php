@@ -57,7 +57,7 @@ echo "<!DOCTYPE html>
   <br>
   <br>
   <br>
-  <center><h1 style='font-size: 60px;'>BIENVENIDO :".strtoupper($nickname)."</h1>
+  <center><h1 style='font-size: 60px; font-family: Iceland;'>BIENVENIDO :".strtoupper($nickname)."</h1>
   <a href='game.php?id=".$nickname."' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Ingresar al Juego</a>
   </center>
  </body> 
