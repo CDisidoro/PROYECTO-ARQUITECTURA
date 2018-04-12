@@ -23,7 +23,7 @@ $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
 $con = new Conexion(); 
 $colombia =$con->Conectar(); 
 
-$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta')"; 
+$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$fecha')"; 
 $stmt = $colombia->prepare($sql); 
 $stmt->execute(); 
 if($stmt){ 
