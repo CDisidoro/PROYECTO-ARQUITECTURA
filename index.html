@@ -14,30 +14,18 @@ type="text/javascript" charset="utf-8"></script>
   <title>game</title>
   <script type="text/javascript">
   $(function(){
-
      $('a[href*=#]').click(function() {
-
      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
          && location.hostname == this.hostname) {
-
              var $target = $(this.hash);
-
              $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
              if ($target.length) {
-
                  var targetOffset = $target.offset().top;
-
                  $('html,body').animate({scrollTop: targetOffset}, 1000);
-
                  return false;
-
             }
-
        }
-
    });
-
   });
   </script>
 </head>
@@ -71,15 +59,7 @@ type="text/javascript" charset="utf-8"></script>
   <footer></footer>
   <script src="particles.js"></script>
   <script src="app.js"></script>
-  <br>
-  <br><br><br><br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <center>
     <section class="slider">
       <ul>
@@ -91,80 +71,70 @@ type="text/javascript" charset="utf-8"></script>
     </section>
   </center>
   <hr>
-    <section>
+  <section>
   <h1 class="titulo-b">¿QUIENES SOMOS?</h1><a name="Biografias"></a>
     <figure>
-      <img class= "img1" src="src/dairo.jpg" all= "dairoooooo" >    
+      <img class= "img1" src="src/dairo.jpg">    
         <figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
         <p class="bio-dairo">Nacio en Villeta el 10 de julio de 1999, curso sus estudios primarios en la esculea rural nacederos, sus estudios de bachiller los realizo en el colegio departamnel la magdalena, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
     </figure>
     <figure>
-      <img class= "img2" src="src/camilo.jpg" all="camilooooooo" >    
+      <img class= "img2" src="src/camilo.jpg">    
         <figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
         <p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
     </figure>
-  </section>
-  <center>
-    <section id="video">
-      <video class="video" controls preload poster="src/juego.png">
+    <article>
+       <center><video class="video" controls preload poster="src/juego.png">
         <source src="src/video/meme.mp4" type="video/mp4">
-      </video>
-    </section>
-  </center>
- 
+      </video></center>
+    </article>
+    <hr>
+  </section>
+<section>
+  <article>
+    <form class="contact_form" action="" method="post" name="Contacto">
+      <ul>
+        <li>
+          <h2>Contactanos</h2><a name="Contacto"></a>
+        </li>
+        <li class="texto">
+          <label for="message">Ingrese su Inquietud</label>
+          <textarea name="message" cols="40" rows="6"></textarea>
+        </li>
+        <li>
+          <label for="email">e-mail</label>
+          <input type="text" name="email" placeholder="camilodisidoro2015@gmail.com" />
+        </li>
+        <li>
+          <label for="name">Nombres</label>
+          <input type="text" name="name" placeholder="Camilo Andres" />
+        </li>
+        <li>
+          <label for="name">Apellidos</label>
+          <input type="text" name="apellido" placeholder="Disidoro Flechas" />
+        </li>
+        <li>
+          <label for="message">Asunto</label>
+          <input type="text" name="message" placeholder="Bug Encontrado" />
+        </li>
+        <li>
+        	<br>
+          <button class="submit" type="submit">Enviar</button>
+        </li>
+      </ul>
+    </form>
+  </article>
   <hr>
-  <form class="contact_form" action="" method="post" name="Contacto">
-    <ul>
-      <li>
-        <h2>Contactanos</h2><a name="Contacto"></a>
-      </li>
-      <li class="texto">
-        <label for="message">Ingrese su Inquietud</label>
-        <textarea name="message" cols="40" rows="6"></textarea>
-      </li>
-      <li>
-        <label for="email">e-mail</label>
-        <input type="text" name="email" placeholder="camilodisidoro2015@gmail.com" />
-      </li>
-      <li>
-        <label for="name">Nombres</label>
-        <input type="text" name="name" placeholder="Camilo Andres" />
-      </li>
-      <li>
-        <label for="name">Apellidos</label>
-        <input type="text" name="apellido" placeholder="Disidoro Flechas" />
-      </li>
-      <li>
-        <label for="message">Asunto</label>
-        <input type="text" name="message" placeholder="Bug Encontrado" />
-      </li>
-      <li>
-      	<br>
-        <button class="submit" type="submit">Enviar</button>
-      </li>
-    </ul>
-  </form>
-  <hr>
+  </section>
   <section>
     <a href="https://www.youtube.com/"><img src="src/yt.png"></a>
     <a href="https://www.twitter.com/"><img src="src/twitter.png"></a>
     <a href="https://www.facebook.com/"><img src="src/facebook.png"></a>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <center><h1 class="titulo-b">INICIO DE SESION</h1></center><a name="Ingresar"></a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <section>
+    <br><br><br><br><br>
+    <center><h1 class="titulo-b">INICIO DE SESION</h1></center><a name="Ingresar"></a>
+    <br><br><br><br><br><br><br><br>
     <center>
       <img src="src/login.png" style="width: 130px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <img src="src/registro.png" style="width: 130px;">
@@ -174,21 +144,7 @@ type="text/javascript" charset="utf-8"></script>
     <center>
     <a href="login.html" style="font-size: 60px;">Iniciar Sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="registro_usuario.html" style="font-size: 60px;">Regístrate</a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</center>
   </section>
   <hr>

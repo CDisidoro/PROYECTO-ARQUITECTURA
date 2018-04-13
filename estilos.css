@@ -17,26 +17,12 @@ header{
   height: 70px;
   margin: auto;
 }
-.logo{
-  width: 30%;
-  height: 70px;
-  float: left;
-  padding-top: 10px;
-}
 nav{
   width: 70%;
   height: 70px;
   float:right;
   text-align: right;
   padding-top: 24px;
-}
- 
-.logo a{
-  color:#fff;
-  font-size: 40px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Iceland;
 }
 nav ul li{
   display: inline;
@@ -83,24 +69,21 @@ figcaption{
   position: absolute;
   bottom: 4px;
   width: 100%;
-  padding: 5%;
 }
 figure:hover figcaption{
   display: block;
   position: relative;
-  padding: 5%
+  padding: 3%;
 }
 .img1{
   width: 500px; 
   height: 500px;
 }  
 .img2{
-  padding-top: 30px;
   width: 500px; 
   height: 500px;
 } 
 .bio-dairo{
-  padding-bottom: 25px;
   text-align: center;
   width: 500px; 
   height: 500px;
@@ -109,7 +92,6 @@ figure:hover figcaption{
   color: #000000;
 }
 .bio-camilo{
-  padding-bottom: 25px;
   text-align: center;
   width: 500px; 
   height: 500px;
@@ -117,11 +99,7 @@ figure:hover figcaption{
   font-size: 25px;
   color: #000000;
 }
-.video{
-	position: relative;
-	bottom: 380px;
-	width: 100%; 
-}
+
 .titulo-b{
 	text-align: center;
 	font-family: Iceland;
@@ -181,7 +159,7 @@ section a img{
 	width: 5%;
 }
 .slider{
-  width: 95%;+
+  width: 95%;
   margin: auto;
   overflow: hidden;
 }
@@ -215,7 +193,7 @@ section a img{
 }
 .video{
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 60px;
   width: 550px;
   height: 450px;
 }
