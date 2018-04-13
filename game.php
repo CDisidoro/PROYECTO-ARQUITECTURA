@@ -1,5 +1,6 @@
 <?php  
 session_start(); //abrir una sesion 
+require_once('conexion.php'); 
 if(isset($_SESSION['ingreso']) && $_SESSION['ingreso'] ==true){ 
  
 } 
@@ -73,6 +74,14 @@ else{
 <?php
 $nick = $_GET['id']; 
 echo "<center><h1 style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>USUARIO: ".strtoupper($nick)."</h1></center>"; 
+$con = new Conexion(); 
+$colombia =$con->Conectar(); 
+$sql = "SELECT * FROM usuario"; 
+$stmt = $colombia->prepare($sql); 
+$stmt->execute();
+while($fila=$stmt->fetch()){
+  echo "<br>Imagen<br>";
+}
 $x = $_GET['avatar']; 
 echo "<img src='".$x."'>";
 //avatar 
