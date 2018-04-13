@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
-
   <meta name="wiewport" content="width=device=width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="cabeza.css">
@@ -10,7 +9,37 @@
   <link rel="icon" type="image/png" href="src/icono.png">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="src/video/meme.mp4">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
   <title>game</title>
+  <script type="text/javascript">
+  $(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+  });
+  </script>
 </head>
 <body>
   <header>
@@ -83,11 +112,11 @@
     </section>
   </center>
  
-  <hr><a name="Contacto"></a>
+  <hr>
   <form class="contact_form" action="" method="post" name="Contacto">
     <ul>
       <li>
-        <h2>Contactanos</h2>
+        <h2>Contactanos</h2><a name="Contacto"></a>
       </li>
       <li class="texto">
         <label for="message">Ingrese su Inquietud</label>
@@ -121,12 +150,12 @@
     <a href="https://www.twitter.com/"><img src="src/twitter.png"></a>
     <a href="https://www.facebook.com/"><img src="src/facebook.png"></a>
   </section>
-  <br><a name="Ingresar"></a>
   <br>
   <br>
   <br>
   <br>
-  <center><h1 class="titulo-b">INICIO DE SESION</h1></center>
+  <br>
+  <center><h1 class="titulo-b">INICIO DE SESION</h1></center><a name="Ingresar"></a>
   <br>
   <br>
   <br>
@@ -163,5 +192,7 @@
 	</center>
   </section>
   <hr>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
