@@ -6,9 +6,9 @@
  
 class Conexion{ 
  
-private $db= "mysql:host=localhost;dbname=bd_juego"; 
-private $user = "root"; 
-private $pass = ""; 
+private $db= "mysql:host=localhost;dbname=id5424353_bd_juego"; 
+private $user = "id5424353_root"; 
+private $pass = "99111107285aA!"; 
  
 public function Conectar(){ 
   $base = new PDO($this->db,$this->user,$this->pass); 
