@@ -69,15 +69,19 @@ else{
  </body> 
 </html>
 <?php
-$nick = $_GET['id']; 
-echo "<center><p style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>USUARIO: ".strtoupper($nick)."</p></center>"; 
+$nick = $_GET['id'];
+echo "<center></center>"; 
 $con = new Conexion(); 
 $colombia =$con->Conectar(); 
 $sql = "SELECT * FROM usuario WHERE nickname = '$nick'"; 
+$sql2 = "SELECT * FROM puntajes WHERE Puntaje"; 
 $stmt = $colombia->prepare($sql); 
 $stmt->execute();
+$stmt2 = $colombia->prepare($sql2);
+$stmt2->execute();
 while($fila=$stmt->fetch()){
-  echo '<center><img src= '.$fila['avatar']." width='8%'></center>";
+  $fila2 = $stmt2->fetch();
+  echo '<center><img src= '.$fila['avatar']." width='8%'><font style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>USUARIO: ".strtoupper($nick)."<br>Su puntaje es: ".$fila2['Puntaje']."<br>Su puntaje fue obtenido el: ".$fila['Obtener_Fecha_Score']."</font></center>";
 }
 ?> 
  

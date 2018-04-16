@@ -9,8 +9,7 @@
   <link rel="icon" type="image/png" href="src/icono.png">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="src/video/meme.mp4">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-type="text/javascript" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <title>game</title>
   <script type="text/javascript">
   $(function(){
@@ -34,10 +33,10 @@ type="text/javascript" charset="utf-8"></script>
     <section class="conf">
     <nav>
       <ul>
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Biografias">¿Quienes Somos?</a></li>
-        <li><a href="#Contacto">Contactanos</a></li>
-        <li><a href="#Ingresar">Ingreso</a></li>
+        <li><a href="#Inicio" title="Inicio">Inicio</a></li>
+        <li><a href="#Biografias" title="Quienes-Somos">¿Quienes Somos?</a></li>
+        <li><a href="#Contacto" title="Contactanos">Contactanos</a></li>
+        <li><a href="#Ingresar" title="Ingresar">Ingreso</a></li>
       </ul>
     </nav>
     </section>
@@ -60,19 +59,20 @@ type="text/javascript" charset="utf-8"></script>
   <script src="particles.js"></script>
   <script src="app.js"></script>
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <center>
-    <section class="slider">
-      <ul>
-        <li><img src="src/imagen1.jpg" all=""></li>
-        <li><img src="src/imagen2.jpg" all=""></li>
-        <li><img src="src/imagen3.jpg" all=""></li>
-        <li><img src="src/imagen4.jpg" all=""></li>
-      </ul>
-    </section>
-  </center>
+  <section class="slider">
+    <center>
+       <ul>
+         <li><img src="src/imagen1.jpg" all=""></li>
+         <li><img src="src/imagen2.jpg" all=""></li>
+         <li><img src="src/imagen3.jpg" all=""></li>
+         <li><img src="src/imagen4.jpg" all=""></li>
+       </ul><a name="Biografias"></a>
+    </center>
+  </section>
   <hr>
-  <section>
-  <h1 class="titulo-b">¿QUIENES SOMOS?</h1><a name="Biografias"></a>
+  <section><br><br>
+  <h1 class="titulo-b">¿QUIENES SOMOS?</h1>
+  <article>
     <figure>
       <img class= "img1" src="src/dairo.jpg">    
         <figcaption>DAIRO ESTIBEN BELTRAN MARTINEZ</figcaption>
@@ -81,12 +81,13 @@ type="text/javascript" charset="utf-8"></script>
     <figure>
       <img class= "img2" src="src/camilo.jpg">    
         <figcaption>CAMILO ANDRÉS D'ISIDORO FLECHAS</figcaption>
-        <p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia ingenieria de sistemas en la universidad de cundinamarca.</p>
+        <p class="bio-camilo">Nacio en Bogota el 11 de noviembre de 1999, curso sus estudios primarios en el colegio Gimnasio Agro-Colombiano de Facatativa, sus estudios de bachiller los realizo en el colegio San Agustin de Facatativa, finalizandolos en el año 2016. Actualmente estudia Ing. de Sistemas en la UdeC</p>
     </figure>
+    </article>
     <article>
        <center><video class="video" controls preload poster="src/juego.png">
         <source src="src/video/meme.mp4" type="video/mp4">
-      </video></center>
+      </video></center><a name="Contacto"></a>
     </article>
     <hr>
   </section>
@@ -94,12 +95,12 @@ type="text/javascript" charset="utf-8"></script>
   <article>
     <form class="contact_form" action="contactar.php" method="post" name="Contacto">
       <ul>
-        <li>
-          <h2>Contactanos</h2><a name="Contacto"></a>
+        <li><br><br>
+          <h2>Contactanos</h2>
         </li>
         <li class="texto">
           <label for="mensaje">Ingrese su Inquietud</label>
-          <textarea name="mensaje" cols="40" rows="6" id="mensaje"></textarea>
+          <textarea name="mensaje" rows="12" id="mensaje" required></textarea>
         </li>
         <li>
           <label for="correo">e-mail</label>
@@ -124,7 +125,7 @@ type="text/javascript" charset="utf-8"></script>
       </ul>
     </form>
   </article>
-  <hr>
+  <hr><a name="Ingresar"></a>
   </section>
   <section>
     <a href="https://www.youtube.com/"><img src="src/yt.png"></a>
@@ -133,7 +134,7 @@ type="text/javascript" charset="utf-8"></script>
   </section>
   <section>
     <br><br><br><br><br>
-    <center><h1 class="titulo-b">INICIO DE SESION</h1></center><a name="Ingresar"></a>
+    <center><h1 class="titulo-b">INICIO DE SESION</h1></center>
     <br><br><br><br><br><br><br><br>
     <center>
       <img src="src/login.png" style="width: 130px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

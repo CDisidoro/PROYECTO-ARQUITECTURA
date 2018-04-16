@@ -57,7 +57,7 @@ hr{
 	font-family: Iceland;
 }
 figure{
-  margin: 5.1%;
+  margin: 5%;
   display: inline-block;
   position: relative;
 }
@@ -86,7 +86,6 @@ figure:hover figcaption{
 .bio-dairo{
   text-align: center;
   width: 500px; 
-  height: 500px;
   font-family: Iceland;
   font-size: 25px;
   color: #000000;
@@ -94,7 +93,6 @@ figure:hover figcaption{
 .bio-camilo{
   text-align: center;
   width: 500px; 
-  height: 500px;
   font-family: Iceland;
   font-size: 25px;
   color: #000000;
@@ -193,7 +191,5 @@ section a img{
 }
 .video{
   margin: 0 auto;
-  padding-top: 60px;
   width: 550px;
-  height: 450px;
 }
