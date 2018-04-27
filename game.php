@@ -35,8 +35,7 @@ else{
   <link rel='icon' type='image/png' href='src/login.png'>
   <title>Operations DC</title>
 </head> 
-<body>  
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<body>
 <?php
 $nick = $_GET['id']; 
 $con = new Conexion(); 

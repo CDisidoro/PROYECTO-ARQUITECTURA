@@ -27,9 +27,8 @@ echo "<!DOCTYPE html>
 	</head> 
 	<body>  
 	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	  <center><h1 style='font-size: 60px; font-family: Iceland;'>BIENVENIDO :".strtoupper($nickname)."</h1>
-	  <a href='game.php?id=".$nickname."' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Ingresar al Juego</a>
-	  </center>
+	  <h1 class='textoJuego'>BIENVENIDO :".strtoupper($nickname)."</h1>
+	  <a href='game.php?id=".$nickname."' class='link'>Ingresar al Juego</a>
 	 </body> 
 	</html>"; 
 }else{ 
@@ -45,9 +44,8 @@ echo "<!DOCTYPE html>
 	</head> 
 	<body>  
 	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	  <center><h1 style='font-size: 60px; font-family: Iceland;'>CONTRASEÑA INCORRECTAs</h1>
-	  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
-	  </center>
+	  <h1 class='textoJuego'>CONTRASEÑA INCORRECTA</h1>
+	  <a href='index.html' class='link'>Volver a Inicio</a>
 	 </body> 
 	</html>"; 
   } 
@@ -64,9 +62,8 @@ echo "<!DOCTYPE html>
 	</head> 
 	<body>   
 	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	  <center><h1 style='font-size: 60px; font-family: Iceland;'>USUARIO NO ENCONTRADO</h1>
-	  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
-	  </center>
+	  <h1 class='textoJuego'>USUARIO NO ENCONTRADO</h1>
+	  <a href='index.html' class='link'>Volver a Inicio</a>
 	 </body> 
 	</html>"; 
   } 

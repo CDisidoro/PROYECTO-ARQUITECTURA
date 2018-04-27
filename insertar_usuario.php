@@ -23,7 +23,7 @@ $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
 $con = new Conexion(); 
 $colombia =$con->Conectar(); 
 
-$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$fecha')"; 
+$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia')"; 
 $stmt = $colombia->prepare($sql); 
 $stmt->execute(); 
 if($stmt){ 
@@ -38,11 +38,14 @@ if($stmt){
   <title>Ingresar Usuario</title>
 </head> 
 <body>
+<section>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br>
-  <center><h1 style='font-size: 60px;'>REGISTRO EXITOSO</h1>
-  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
-  </center>
+  <article>
+  <h1 class='exitoReg'>REGISTRO EXITOSO</h1>
+  <a href='index.html' class = 'textoJuego'>Volver a Inicio</a>
+  </article>
+  </section>
  </body> 
 </html>"; 
 } 
@@ -59,8 +62,8 @@ else{
 </head> 
 <body> 
   <br><br><br><br><br><br>
-  <h1>ERROR AL REGISTRAR</h1>
-  <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
+  <h1 class='textoReg'>ERROR AL REGISTRAR</h1>
+  <a href='index.html' class='textoJuego'>Volver a Inicio</a>
   <br><br><br><br><br><br>
  </body> 
 </html>"; 

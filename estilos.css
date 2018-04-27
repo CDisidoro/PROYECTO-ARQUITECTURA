@@ -194,7 +194,10 @@ section a img{
   width: 550px;
 }
 .textoJuego{
+  display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 40px;
   color:black;
   text-decoration: none;
@@ -220,4 +223,70 @@ section a img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.formulario{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.campoReg{
+  display: inline-block;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: auto;
+  font-size: 20px;
+  color:black;
+  font-family: Iceland;
+  width: 200px;
+  height: 30px;
+}
+.textoReg{
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Iceland;
+}
+.botonReg{
+  width: 120px;
+  height: 35px;
+  font-size: 25px;
+}
+.avatarReg{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: auto;
+  font-size: 20px;
+  color:black;
+  font-family: Iceland;
+  width: 200px;
+  height: 30px;
+}
+.exitoReg{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Iceland;
+}
+.link{
+  color: black;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Iceland;
 }
