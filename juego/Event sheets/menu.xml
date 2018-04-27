@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menu</name>
+    <events>
+        <event-block sid="3341748606472515">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="228471685377346" type="Mouse">
+                    <param id="0" name="Object">jugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="55048461983715" type="jugar">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1275392225515659" type="jugar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5929684030311577">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1908381922262605" type="Mouse">
+                    <param id="0" name="Object">jugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="4343848087262243" type="jugar">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6166719082346048" type="jugar">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653813915845384">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5752090342207816" type="Mouse">
+                    <param id="0" name="Object">ranking</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="6940676704019941" type="ranking">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3313591707789936" type="ranking">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7430311664577365">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8374857918004324" type="Mouse">
+                    <param id="0" name="Object">ranking</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="5308923742288831" type="ranking">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2631992574964927" type="ranking">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4731842565479528">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9455846547659209" type="Mouse">
+                    <param id="0" name="Object">dificultad</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="758853399590388" type="dificultad">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="971821040303805" type="dificultad">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6261919786856252">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="9567877886374279" type="Mouse">
+                    <param id="0" name="Object">dificultad</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="2908704794188977" type="dificultad">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5484177902446406" type="dificultad">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7870005237176142">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8008374277391585" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">jugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="6633263504867486" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
