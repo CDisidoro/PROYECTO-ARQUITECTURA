@@ -5,28 +5,29 @@ if(isset($_SESSION['ingreso']) && $_SESSION['ingreso'] ==true){
 }
 else{ 
   echo "<!DOCTYPE html> 
-  <html lang='en'> 
-    <head> 
-    <meta charset='UTF-8'> 
-    <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
-    <link rel='stylesheet' type='text/css' href='estilos.css'> 
-    <link rel='stylesheet' type='text/css' href='cabeza.css'>
-    <link rel='icon' type='image/png' href='src/login.png'>
-    <title>ACCESO ILEGAL</title>
-  </head> 
-  <body>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <center><h1 style='font-size: 60px; font-family: Iceland;'>ACCESO ILEGAL AL JUEGO</h1>
-    <center><h1 style='font-size: 60px; font-family: Iceland;'>POR FAVOR, INICIE SESIÓN DE FORMA ADECUADA</h1>
-    <a href='index.html' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Volver a Inicio</a>
-    </center>
-   </body> 
-  </html>"; 
+        <html lang='en'> 
+          <head> 
+          <meta charset='UTF-8'> 
+          <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
+          <link rel='stylesheet' type='text/css' href='estilos.css'> 
+          <link rel='stylesheet' type='text/css' href='cabeza.css'>
+          <link rel='icon' type='image/png' href='src/login.png'>
+          <title>ACCESO ILEGAL</title>
+        </head> 
+        <body>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <center><h1 class='textoJuego'>ACCESO ILEGAL AL JUEGO</h1>
+          <center><h1 class='textoJuego'>POR FAVOR, INICIE SESIÓN DE FORMA ADECUADA</h1>
+          <a href='index.html' class='textoJuego'>Volver a Inicio</a>
+          </center>
+         </body> 
+        </html>"; 
   exit; 
 } 
-?><!DOCTYPE html> 
+?>
+<!DOCTYPE html> 
 <html lang='en'> 
-  <head> 
+<head> 
   <meta charset='UTF-8'> 
   <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
   <link rel='stylesheet' type='text/css' href='estilos.css'> 
@@ -35,27 +36,48 @@ else{
   <title>Operations DC</title>
 </head> 
 <body>  
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  </center>
- </body> 
-</html>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?php
-$nick = $_GET['id'];
-echo "<center></center>"; 
+$nick = $_GET['id']; 
 $con = new Conexion(); 
 $colombia =$con->Conectar(); 
 $sql = "SELECT * FROM usuario WHERE nickname = '$nick'"; 
-$sql2 = "SELECT * FROM puntajes WHERE Puntaje"; 
 $stmt = $colombia->prepare($sql); 
 $stmt->execute();
-$stmt2 = $colombia->prepare($sql2);
-$stmt2->execute();
 while($fila=$stmt->fetch()){
-  $fila2 = $stmt2->fetch();
-  echo '<center><img src= '.$fila['avatar']." width='8%'><font style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>USUARIO: ".strtoupper($nick)."<br>Su puntaje es: ".$fila2['Puntaje']."<br>Su puntaje fue obtenido el: ".$fila['Obtener_Fecha_Score']."</font></center>";
-}
+  //OBTIENE EL PUNTAJE DE FORMA ADECUADA - ENTRA A OBTENER COMO PUENTE
+  $fechausuario= $fila['Obtener_Fecha_Score'];
+  $aobtener = "SELECT * FROM obtener WHERE Fecha_Score = '$fechausuario'";
+  $aobtener = $colombia->prepare($aobtener);
+  $aobtener->execute();
+  $vectorObtener = $aobtener->fetch();
+  //OBTIENE EL RANKING QUE LE CORRESPONDE A SU FECHA
+  $rankobtener = $vectorObtener['Puntajes_Ranking'];
+  $apuntajes = "SELECT * FROM puntajes WHERE Ranking = '$rankobtener'"; 
+  $apuntajes = $colombia->prepare($apuntajes);
+  $apuntajes->execute();
+  //OBTIENE EL PUNTAJE Y DEMAS DATOS
+  $filap = $apuntajes->fetch();
 ?>
-<br> 
-  <center><a href='cerrar_sesion.php' style='font-size: 60px; color:black;font-size: 40px;text-decoration: none;font-weight: bold;font-family: Iceland;'>Cerrar Sesión</a></center>
+<section>
+  <article>
+    <img src= "<?php echo $fila['avatar']; ?>" class='imagenJuego'>
+  </article>
+  <article>
+    <p class='textoJuego'>USUARIO: <?php echo strtoupper($nick); ?></p>
+  </article>
+  <article>
+    <p class='textoJuego'>Su puntaje es: <?php echo $filap['Puntaje']; ?></p>
+  </article>
+  <article>
+    <p class='textoJuego'>Su puntaje fue obtenido el: <?php echo $fila['Obtener_Fecha_Score']; ?></p>
+  </article>
+  <article>
+    <a class='textoJuego' href='cerrar_sesion.php'>Cerrar Sesión</a>
+  </article>
+<?php
+  }
+?>
+</section>
 </body> 
 </html> 
