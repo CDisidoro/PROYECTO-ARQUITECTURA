@@ -16,7 +16,7 @@
 			  <link rel='stylesheet' type='text/css' href='estilos.css'> 
 			  <link rel='stylesheet' type='text/css' href='cabeza.css'>
 			  <link rel='icon' type='image/png' href='src/login.png'>
-			  <title>CONTACTANOS</title>
+			  <title>CONTACTÁNOS</title>
 			</head> 
 			<body>  
 			  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -35,7 +35,7 @@
 			  <link rel='stylesheet' type='text/css' href='estilos.css'> 
 			  <link rel='stylesheet' type='text/css' href='cabeza.css'>
 			  <link rel='icon' type='image/png' href='src/login.png'>
-			  <title>CONTACTANOS</title>
+			  <title>CONTACTÁNOS</title>
 			</head> 
 			<body>
 			  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

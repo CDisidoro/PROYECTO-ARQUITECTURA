@@ -13,20 +13,35 @@ $imagen =$_FILES['imagen']['name'];
  
 //generar num aleatorios entre 500 -10000 
 $numero = rand(500,10000); 
-$dia = date('z'); 
+$dia = date('Y-m-d'); 
 $ruta= "fotosavatar/".$dia.$numero.$imagen; 
 $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta); 
- 
+$dificultad = 1;
  
 //insertar datos del formulario a la BD 
  
 $con = new Conexion(); 
 $colombia =$con->Conectar(); 
-
-$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia')"; 
+//Inserta usuario
+$sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia', '$dificultad')"; 
 $stmt = $colombia->prepare($sql); 
 $stmt->execute(); 
-if($stmt){ 
+//inserta Obtener
+$busqueda = "SELECT * FROM obtener";
+$busquedaP = $colombia->prepare($busqueda);
+$busquedaP->execute();
+$rank = $busquedaP->rowCount();
+$rank++;
+$obt = "INSERT INTO obtener VALUES ('$dia', '$rank')";
+$obtp = $colombia->prepare($obt);
+$obtp->execute();
+//inserta puntajes
+$tiempo = 0;
+$puntaje = 0;
+$scr = "INSERT INTO puntajes VALUES ('$rank','$puntaje','$tiempo')";
+$scrp = $colombia->prepare($scr);
+$scrp->execute();
+if($stmt && $obtp && $scrp){ 
   echo "<!DOCTYPE html> 
 <html lang='en'> 
 	<head> 
