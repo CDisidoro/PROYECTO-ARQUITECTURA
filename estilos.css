@@ -242,7 +242,7 @@ section a img{
   height: 30px;
 }
 .textoReg{
-  display: inline-block;
+  display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
