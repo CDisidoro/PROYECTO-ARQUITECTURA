@@ -45,8 +45,7 @@ $stmt = $colombia->prepare($sql);
 $stmt->execute();
 while($fila=$stmt->fetch()){
   //OBTIENE EL PUNTAJE DE FORMA ADECUADA - ENTRA A OBTENER COMO PUENTE
-  $fechausuario= $fila['Obtener_Fecha_Score'];
-  $aobtener = "SELECT * FROM obtener WHERE Fecha_Score = '$fechausuario'";
+  $aobtener = "SELECT * FROM obtener WHERE Usuario_Score = '$nick'";
   $aobtener = $colombia->prepare($aobtener);
   $aobtener->execute();
   $vectorObtener = $aobtener->fetch();
@@ -73,10 +72,13 @@ while($fila=$stmt->fetch()){
   </article>
   <article>
     <a class='textoJuego' href='cerrar_sesion.php'>Cerrar Sesión</a>
-  </article>
+  </article><br><br>
 <?php
   }
 ?>
+</section>
+<section>
+  <embed class="ventanaJuego" src="juego construct/index.html"></embed>
 </section>
 </body> 
 </html> 
