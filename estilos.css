@@ -305,3 +305,12 @@ section a img{
   min-height: 500px;
   max-height: 500px;
 }
+.ventanaChat{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 600px;
+  max-height: 600px;
+}

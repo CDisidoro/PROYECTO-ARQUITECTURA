@@ -1,42 +1,37 @@
 <?php
 require_once('conexion.php');
-session_start();
+
 $jugador = $_SESSION['nickname'];
-
-$puntaje = 10;
-$tiempo = 10;
-
+$puntaje = $_POST['puntos'];
+$tiempo = $_POST['tiempo'];
 
 $conex = new Conexion();
 $establecer = $conex->Conectar();
-/*$conex = new Conexion();
-$establecer = $conex->Conectar();
-$sql = "UPDATE score SET Puntaje = '$puntaje',tiempo = '$tiempo' WHERE Nickname = '$jugador'";
-$stmt=$establecer->prepare($sql);
-$stmt->execute();*/
 
-//$sql = "INSERT INTO score VALUES ('$jug','$punt','$tiempo')";
-//$stmt=$establecer->prepare($sql);
-//$stmt->execute();
-
-$sql = "SELECT * FROM obtener WHERE Usuario_Score = '$jugador' ";//me trae todos los datos de la tabla
-
-
-//$sql = "SELECT score FROM Nickname WHERE Nickname = '$jugador' ";
+$sql = "SELECT * FROM obtener WHERE Usuario_Score = '$jugador' ";//DATOS DE TABLA OBTENER
 $stmt=$establecer->prepare($sql);
 $stmt->execute();
-$usuario = $stmt->rowCount();
-if($usuario>0){
-	$rank =$usuario['Ranking'];
-	$tablaComm = "SELECT * FROM puntajes WHERE Puntaje = '$rank'";
+$datos = $stmt->fetch();
+$rank =$datos['Puntajes_Ranking'];//RANGO DEL USUARIO LOGEADO CON SU PUNTAJE CORRESPONDIENTE
+if($stmt->rowCount()>0){
+
+
+	$tablaComm = "SELECT * FROM puntajes WHERE Ranking = '$rank'"; //DATOS DE TABLA PUNTAJES
 	$tablaEjct = $establecer->prepare($tablaComm);
 	$tablaEjct->execute();
-	$sql2= "UPDATE puntajes SET Puntaje = '$puntaje',Tiempo = '$tiempo' WHERE Ranking = '$rank' ";
+	$datosP = $tablaEjct->fetch();
+
+	$sql2= "UPDATE puntajes SET Ranking = '$datosP['Ranking']',Puntaje='$puntaje',Tiempo='$tiempo' WHERE Ranking='$rank'"; 
 	$stmt1= $establecer->prepare($sql2);
 	$stmt1->execute();
-}else{
 
-	$sql3= "INSERT INTO puntajes VALUES ('$jugador','$puntaje','$tiempo')";
+}else{
+	$tablaComm = "SELECT * FROM puntajes WHERE Ranking = '$rank'";
+	$tablaEjct = $establecer->prepare($tablaComm);
+	$tablaEjct->execute();
+	$datosP = $tablaEjct->fetch();
+	$rank++;
+	$sql3= "INSERT INTO puntajes VALUES ('$rank','$puntaje','$tiempo')";
 	$stmt2=$establecer->prepare($sql3);
 	$stmt2->execute();
 }

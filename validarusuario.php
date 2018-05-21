@@ -25,10 +25,12 @@ echo "<!DOCTYPE html>
 	  <link rel='icon' type='image/png' href='src/login.png'>
 	  <title>Iniciar Sesión</title>
 	</head> 
-	<body>  
-	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<body>
 	  <h1 class='textoJuego'>BIENVENIDO :".strtoupper($nickname)."</h1>
 	  <a href='game.php?id=".$nickname."' class='link'>Ingresar al Juego</a>
+		<section>
+		  <embed class='ventanaChat' src='chat-bot/index.html'></embed>
+		</section>
 	 </body> 
 	</html>"; 
 }else{ 
