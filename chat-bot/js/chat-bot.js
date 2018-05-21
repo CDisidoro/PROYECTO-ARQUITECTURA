@@ -35,6 +35,7 @@ function chatBot() {
 			return "Hola";
 			break;
 		}
+
 		if(this.match('(cya|bye|see ya|ttyl|talk to you later|chao|adios|nos vemos)'))
 		switch(num){
 			case 1:
@@ -132,6 +133,9 @@ function chatBot() {
 			return ":3";
 			break;
 		}
+
+		if(this.match('(reglas|normas|leyes|instrucciones)'))
+			return ["Puedes ver las reglas cerrando la sesión actual.","Luego debajo de las biografías de los creadores encontrarás el vídeo que explicará las reglas de juego."];
 
 		return "No te entendí :(";
 	}

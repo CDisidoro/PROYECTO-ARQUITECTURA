@@ -33,25 +33,10 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
    
   //Inserta usuario
-  $sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia')"; 
+  $sql = "UPDATE usuario SET nickame = '$nickname', correo = '$correo', password = '$password', fecha = '$fecha', avatar = '$ruta', Obtener_Fecha_Score = '$dia'"; 
   $stmt = $colombia->prepare($sql); 
-  $stmt->execute(); 
-  //inserta Obtener
-  $busqueda = "SELECT * FROM obtener";
-  $busquedaP = $colombia->prepare($busqueda);
-  $busquedaP->execute();
-  $rank = $busquedaP->rowCount();
-  $rank++;
-  $obt = "INSERT INTO obtener VALUES ('$dia', '$rank')";
-  $obtp = $colombia->prepare($obt);
-  $obtp->execute();
-  //inserta puntajes
-  $tiempo = 0;
-  $puntaje = 0;
-  $scr = "INSERT INTO puntajes VALUES ('$rank','$puntaje','$tiempo')";
-  $scrp = $colombia->prepare($scr);
-  $scrp->execute();
-  if($stmt && $obtp && $scrp){ 
+  $stmt->execute();
+  if($stmt){ 
     echo "<!DOCTYPE html> 
   <html lang='en'> 
   	<head> 
@@ -60,14 +45,14 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   	<link rel='stylesheet' type='text/css' href='estilos.css'> 
   	<link rel='stylesheet' type='text/css' href='cabeza.css'>
   	<link rel='icon' type='image/png' href='src/login.png'>
-    <title>Ingresar Usuario</title>
+    <title>Actualizar Usuario</title>
   </head> 
   <body>
   <section>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br>
     <article>
-    <h1 class='exitoReg'>REGISTRO EXITOSO</h1>
+    <h1 class='exitoReg'>ACTUALIZACIÓN EXITOSA</h1>
     <a href='index.html' class = 'textoJuego'>Volver a Inicio</a>
     </article>
     </section>
@@ -87,7 +72,7 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   </head> 
   <body> 
     <br><br><br><br><br><br>
-    <h1 class='textoReg'>ERROR AL REGISTRAR</h1>
+    <h1 class='textoReg'>ERROR AL ACTUALIZAR</h1>
     <a href='index.html' class='textoJuego'>Volver a Inicio</a>
     <br><br><br><br><br><br>
    </body> 
@@ -102,11 +87,11 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   <link rel='stylesheet' type='text/css' href='estilos.css'> 
   <link rel='stylesheet' type='text/css' href='cabeza.css'>
   <link rel='icon' type='image/png' href='src/login.png'>
-  <title>Error de Registro</title>
+  <title>Error de Actualización</title>
 </head> 
 <body> 
   <br><br><br><br><br><br>
-    <h1 class='exitoReg'>ERROR AL REGISTRAR</h1>
+    <h1 class='exitoReg'>ERROR AL ACTUALIZAR</h1>
     <a href='index.html' class='textoJuego'>Volver a Inicio</a>
   <br><br><br><br><br><br>
  </body> 

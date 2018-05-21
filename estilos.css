@@ -314,3 +314,25 @@ section a img{
   min-height: 600px;
   max-height: 600px;
 }
+.campoLgn{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color:black;
+  font-family: Iceland;
+  width: 200px;
+  height: 30px;
+}
+.textoLgn{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Iceland;
+}
