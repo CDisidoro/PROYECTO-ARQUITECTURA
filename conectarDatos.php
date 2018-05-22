@@ -1,10 +1,14 @@
 <?php
 session_start(); 
 require_once('conexion.php');
-$jugador = $_SESSION['nickname'];
 if(isset($_POST['puntos']) && isset($_POST['tiempo'])){
 	$puntaje = $_POST['puntos'];
 	$tiempo = $_POST['tiempo'];
+	if(isset($_SESSION['nickname'])){
+		$jugador = $_SESSION['nickname'];
+	}else{
+		$jugador = "c";
+	}
 }else{
 	$puntaje = 60;
 	$tiempo = 30;

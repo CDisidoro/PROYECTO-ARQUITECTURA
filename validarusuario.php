@@ -28,7 +28,7 @@ echo "<!DOCTYPE html>
 	<body>
 	  <h1 class='textoJuego'>BIENVENIDO :".strtoupper($nickname)."</h1>
 	  <a href='game.php?id=".$nickname."' class='link'>Ingresar al Juego</a>
-	  <a href='modificar.html' class='link'>Modificar Cuenta</a>
+	  <a href='modificar.php' class='link'>Modificar Cuenta</a>
 	  <a href='borrar.html' class='link'>Cerrar Cuenta</a>
 	  <a href='cerrar_sesion.php' class='link'>Cerrar Sesión</a>
 		<section>

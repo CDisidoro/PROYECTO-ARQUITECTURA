@@ -13,19 +13,9 @@ $correo =$_POST['correo'];
 $password=$_POST['password']; 
 $passwordC=$_POST['passwordC']; 
 $fecha=$_POST['fecha']; 
-$imagen =$_FILES['imagen']['name']; 
+$imagen =$_FILES['imagen']['name'];
 
-$comandoBusqueda = "SELECT * FROM usuario WHERE nickname = '$nickname'";
-$ejecutar = $colombia->prepare($comandoBusqueda);
-$ejecutar->execute();
-$actuales = $ejecutar->rowCount();
-
-$comandoBusquedaB = "SELECT * FROM usuario WHERE correo = '$correo'";
-$ejecutarB = $colombia->prepare($comandoBusquedaB);
-$ejecutarB->execute();
-$actualesB = $ejecutarB->rowCount();
-
-if($password == $passwordC && $actuales==0 && $actualesB==0){
+if($password == $passwordC){
   //generar num aleatorios entre 500 -10000 
   $numero = rand(500,10000); 
   $dia = date('Y-m-d'); 
@@ -33,7 +23,7 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
    
   //Inserta usuario
-  $sql = "UPDATE usuario SET nickame = '$nickname', correo = '$correo', password = '$password', fecha = '$fecha', avatar = '$ruta', Obtener_Fecha_Score = '$dia'"; 
+  $sql = "UPDATE usuario SET nickname = '$nickname', correo = '$correo', password = '$password', fecha = '$fecha', avatar = '$ruta', Obtener_Fecha_Score = '$dia' WHERE nickname = '$nickname'"; 
   $stmt = $colombia->prepare($sql); 
   $stmt->execute();
   if($stmt){ 
