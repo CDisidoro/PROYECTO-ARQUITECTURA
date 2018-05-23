@@ -44,18 +44,6 @@ $sql = "SELECT * FROM usuario WHERE nickname = '$nick'";
 $stmt = $colombia->prepare($sql); 
 $stmt->execute();
 while($fila=$stmt->fetch()){
-  //OBTIENE EL PUNTAJE DE FORMA ADECUADA - ENTRA A OBTENER COMO PUENTE
-  $aobtener = "SELECT * FROM obtener WHERE Usuario_Score = '$nick'";
-  $aobtener = $colombia->prepare($aobtener);
-  $aobtener->execute();
-  $vectorObtener = $aobtener->fetch();
-  //OBTIENE EL RANKING QUE LE CORRESPONDE A SU FECHA
-  $rankobtener = $vectorObtener['Puntajes_Ranking'];
-  $apuntajes = "SELECT * FROM puntajes WHERE Ranking = '$rankobtener'"; 
-  $apuntajes = $colombia->prepare($apuntajes);
-  $apuntajes->execute();
-  //OBTIENE EL PUNTAJE Y DEMAS DATOS
-  $filap = $apuntajes->fetch();
 ?>
 <section>
   <article>
@@ -65,10 +53,10 @@ while($fila=$stmt->fetch()){
     <p class='textoJuego'>USUARIO: <?php echo strtoupper($nick); ?></p>
   </article>
   <article>
-    <p class='textoJuego'>Su puntaje es: <?php echo $filap['Puntaje']; ?></p>
+    <p class='textoJuego'>Su puntaje es: <?php echo $fila['puntaje']; ?></p>
   </article>
   <article>
-    <p class='textoJuego'>Su puntaje fue obtenido el: <?php echo $fila['Obtener_Fecha_Score']; ?></p>
+    <p class='textoJuego'>Su puntaje fue obtenido el: <?php echo $fila['fechaScore']; ?></p>
   </article>
   <article>
     <a class='textoJuego' href='cerrar_sesion.php'>Cerrar Sesión</a>

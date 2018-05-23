@@ -31,27 +31,13 @@ if($password == $passwordC && $actuales==0 && $actualesB==0){
   $dia = date('Y-m-d'); 
   $ruta= "fotosavatar/".$dia.$numero.$imagen; 
   $carga = @move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
-   
-  //Inserta usuario
-  $sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia')"; 
-  $stmt = $colombia->prepare($sql); 
-  $stmt->execute(); 
-  //inserta Obtener
-  $busqueda = "SELECT * FROM obtener";
-  $busquedaP = $colombia->prepare($busqueda);
-  $busquedaP->execute();
-  $rank = $busquedaP->rowCount();
-  $rank++;
-  $obt = "INSERT INTO obtener VALUES ('$dia', '$rank')";
-  $obtp = $colombia->prepare($obt);
-  $obtp->execute();
-  //inserta puntajes
+  $rank = 0;
   $tiempo = 0;
   $puntaje = 0;
-  $scr = "INSERT INTO puntajes VALUES ('$rank','$puntaje','$tiempo')";
-  $scrp = $colombia->prepare($scr);
-  $scrp->execute();
-  if($stmt && $obtp && $scrp){ 
+  $sql = "INSERT INTO usuario VALUES ('$nickname', '$correo', '$password', '$fecha', '$ruta', '$dia','$rank','$puntaje','$tiempo')"; 
+  $stmt = $colombia->prepare($sql); 
+  $stmt->execute(); 
+  if($stmt){ 
     echo "<!DOCTYPE html> 
   <html lang='en'> 
   	<head> 
