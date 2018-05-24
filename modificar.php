@@ -22,7 +22,6 @@ require_once('conexion.php');
 	$stmt->execute();
 	$datos = $stmt->fetch();
 	 ?>
-  <br><br><br><br><br>
     <h1 class="textoJuego">Actualización de Usuarios</h1> 
     <form action ="actualizar_usuario.php" method = "post" enctype="multipart/form-data" class="formulario" name="formu"> 
       <label class="textoReg" for="nickname">Nickname: </label>

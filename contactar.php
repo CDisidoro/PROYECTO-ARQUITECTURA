@@ -15,7 +15,7 @@
 			  <link rel='stylesheet' type='text/css' href='css/estilos.css'> 
 			  <link rel='stylesheet' type='text/css' href='estilos.css'> 
 			  <link rel='stylesheet' type='text/css' href='cabeza.css'>
-			  <link rel='icon' type='image/png' href='src/login.png'>
+			  <link rel='icon' type='image/png' href='src/correo.png'>
 			  <title>CONTACTÁNOS</title>
 			</head> 
 			<body>  

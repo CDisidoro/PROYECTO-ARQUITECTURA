@@ -67,6 +67,6 @@ while($fila=$stmt->fetch()){
 </section>
 <section>
   <embed class="ventanaJuego" src="juego construct/index.html"></embed>
-</section>
+</section><br><br><br>
 </body> 
 </html> 
